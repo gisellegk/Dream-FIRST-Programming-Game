@@ -1,0 +1,21 @@
+//I think, IDK, I"m testing stuff: this is Java Swing
+
+import javax.swing.JFrame;
+jaa.awt.event.*;
+java.awt.*;
+
+
+public GameGUI extends JFrame
+{
+  private static final int WIDTH=100;
+  private static final int HEIGHT=300;
+  
+  public GameGUIProgram()
+  {
+   setTitle("Play Gizmo Runner!");
+   setSize(WIDTH, HEIGHT);
+   setVisible(true);
+   setDefaultCloseOperation(EXIT_ON_CLOSE);
+  }
+
+}
