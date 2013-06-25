@@ -16,11 +16,10 @@ public class GameGUI extends JFrame {
 		getContentPane().add(emptyLabel, BorderLayout.CENTER);
 
 		pack();
-		setVisible(true);
 	}
 
 	public static void main(String args[]) {
-		java.awt.EventQueue.invokeLater(new Runnable() {
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				new GameGUI().setVisible(true);
 			}
