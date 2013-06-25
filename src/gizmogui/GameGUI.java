@@ -10,11 +10,15 @@ public class GameGUI extends JFrame {
 
 	public GameGUI() {
 		setTitle("Hi");
+		JPanel hi = new JPanel();
+		hi.setLayout(new GridLayout(1,5,2,2));
+		for(int i = 0; i < 5; i++) {
+			hi.add(new ButtonIcon(i));
+		}
 
-		JLabel emptyLabel = new JLabel("");
-		emptyLabel.setPreferredSize(new Dimension(600, 450));
-		getContentPane().add(emptyLabel, BorderLayout.CENTER);
+//		ButtonHolder hi = new ButtonHolder();
 
+		add(hi, BorderLayout.CENTER);
 		pack();
 	}
 

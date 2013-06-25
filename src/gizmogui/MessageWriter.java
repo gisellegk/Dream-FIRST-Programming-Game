@@ -1,7 +1,6 @@
 package gizmogui;
 
 import javax.swing.*;
-
 import writer.Message;
 
 public class MessageWriter extends JPanel {
